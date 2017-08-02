@@ -52,7 +52,7 @@ BOOST_NOBUILD=atomic,chrono,container,context,coroutine,date_time,exception,file
 
 CC=g++
 CFLAGS=-c -Wall
-SPECTRAST=SpectraST
+SPECTRAST=bin/SpectraST
 
 
 LDFLAGS= -lm -lpthread -L$(DEP_EXPAT_BUILD)/lib -lexpat  -L$(DEP_GSL_BUILD)/lib -lgsl -lgslcblas -L$(DEP_ZLIB_BUILD)/lib -lz
@@ -94,7 +94,7 @@ $(SPECTRAST): $(OBJ_FILES_RAMP) $(OBJ_FILES_SPECTRAST)
 	    $(CC) $(IFLAGS) -o $@ $^ $(LDFLAGS) -DSTANDALONE_LINUX -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 
 
 ${OBJ}/spectrast/%.o: src/spectrast/%.cpp
-	mkdir -p £{OBJ}/spectrast
+	mkdir -p ${OBJ}/spectrast
 	$(CC) $(IFLAGS) $(CFLAGS) -o $@ $<  -DSTANDALONE_LINUX -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1
 
 

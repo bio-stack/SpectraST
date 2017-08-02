@@ -24,7 +24,7 @@ srcdir = .
 top_srcdir = .
 
 
-prefix = /Users/yperez/IdeaProjects/github-repo/BDP/SpectraST/build/extern/expat-2.0.1
+prefix = /Users/yperez/IdeaProjects/github-repo/BDP/SpectraST/bin/lib/extern/expat-2.0.1
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin

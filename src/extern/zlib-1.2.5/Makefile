@@ -44,7 +44,7 @@ TAR=tar
 SHELL=/bin/sh
 EXE=
 
-prefix =/Users/yperez/IdeaProjects/github-repo/BDP/SpectraST/build/extern/zlib-1.2.5
+prefix =/Users/yperez/IdeaProjects/github-repo/BDP/SpectraST/bin/lib/extern/zlib-1.2.5
 exec_prefix =${prefix}
 libdir =${exec_prefix}/lib
 sharedlibdir =${libdir}
